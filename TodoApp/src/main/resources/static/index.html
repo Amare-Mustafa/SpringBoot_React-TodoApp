@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        
+        <div class="add-todo">
+            <input type="text" id="todoTitle" placeholder="Enter todo title">
+            <textarea id="todoDescription" placeholder="Enter description (optional)"></textarea>
+            <button id="addTodoBtn">Add Todo</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="uncompleted">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="todos-container">
+            <!-- Todos will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
